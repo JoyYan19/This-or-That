@@ -79,6 +79,10 @@ Known Issues:
     left: 0vw;
     z-index: 1;
 }
+
+.question-nav {
+    color: blue !important;
+}
 </style>
 
 <body>
@@ -89,7 +93,7 @@ Known Issues:
 <div id="content" class="w3-container">
 	<p><strong>A controversial goal just happened!</strong> Answer questions about the situation to determine if it should count.</p> <!--Introduce the user to the website-->
 
-	<a href="#one" class="w3-btn w3-flat-greenland w3-round w3-large"> Get Started </a> <!-- this line presents the first button that users click to proceed to page one-->
+	<a href="#one" class="w3-btn w3-flat-greenland w3-round w3-large question-nav"> Get Started </a> <!-- this line presents the first button that users click to proceed to page one-->
 	
 	<p><strong>Disclaimer:</strong> This tool is for entertainment purposes only. It simulates soccer goal decision-making and should not be used for official match decisions. Always follow official FIFA Laws of the Game.</p>
 </div>
@@ -100,11 +104,11 @@ Known Issues:
 		<h1>Question 1</h1>
 	</div>
 	
-    	<div id="content" class="w3-container"> <!--creating the question and buttons for Q1-->
+	<div id="content" class="w3-container"> <!--creating the question and buttons for Q1-->
 		<p><strong>Was the attacking player in an offside position when the ball was played to them?</strong></p>
-		<img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=400" alt="Soccer Match" style="width:100%; max-width:300px; margin: 15px 0;">
-		<a href="#two" onclick="goalDoesntCountAdd();" class="w3-btn w3-flat-red"> Yes - Offside! </a>
-		<a href="#two" onclick="goalCountsAdd();" class="w3-btn w3-flat-green"> No - Onside </a>
+		<img src="https://via.placeholder.com/300x200?text=Offside+Situation" alt="Soccer Match" style="width:100%; max-width:300px; margin: 15px 0;">
+		<a href="#two" onclick="goalDoesntCountAdd();" class="w3-btn w3-flat-red question-nav"> Yes - Offside! </a>
+		<a href="#two" onclick="goalCountsAdd();" class="w3-btn w3-flat-green question-nav"> No - Onside </a>
 	</div>
 </div>
 	
@@ -116,7 +120,7 @@ Known Issues:
 	
 	<div id="content" class="w3-container"> <!--creating the question and buttons for Q2-->
 		<p><strong>Did the attacking player use their hand or arm to score?</strong></p>
-		<img src="https://images.unsplash.com/photo-1579356869644-dca89b36216d?w=400" alt="Soccer hands" style="width:100%; max-width:300px; margin: 15px 0;">
+		<img src="https://via.placeholder.com/300x200?text=Handball+Situation" alt="Soccer hands" style="width:100%; max-width:300px; margin: 15px 0;">
 		<a href="#three" onclick="goalDoesntCountAdd();" class="w3-btn w3-flat-red"> Yes - Handball! </a>
 		<a href="#three" onclick="goalCountsAdd();" class="w3-btn w3-flat-green"> No - Foot/Head </a>
 	</div>
@@ -130,9 +134,9 @@ Known Issues:
 
 	<div id="content" class="w3-container"> <!--creating the question and buttons for Q3-->
 		<p><strong>Was there a foul committed by the attacking player before the shot?</strong></p>
-		<img src="https://images.unsplash.com/photo-1517466895117-02f4aeda0b0e?w=400" alt="Soccer foul" style="width:100%; max-width:300px; margin: 15px 0;">
-		<a href="#four" onclick="goalDoesntCountAdd();" class="w3-btn w3-flat-red"> Yes - Foul Committed </a>
-		<a href="#four" onclick="goalCountsAdd();" class="w3-btn w3-flat-green"> No - Clean Play </a>
+		<img src="https://via.placeholder.com/300x200?text=Foul+Situation" alt="Soccer foul" style="width:100%; max-width:300px; margin: 15px 0;">
+		<a href="#four" onclick="goalDoesntCountAdd();" class="w3-btn w3-flat-red question-nav"> Yes - Foul Committed </a>
+		<a href="#four" onclick="goalCountsAdd();" class="w3-btn w3-flat-green question-nav"> No - Clean Play </a>
 	</div>
 </div>
 	
@@ -144,9 +148,9 @@ Known Issues:
 
 	<div id="content" class="w3-container">
 		<p><strong>Did the goalkeeper or defender interfere with the ball illegally?</strong></p>
-		<img src="https://images.unsplash.com/photo-1516096176416-f56ea8a5f41e?w=400" alt="Goalkeeper" style="width:100%; max-width:300px; margin: 15px 0;">
-		<a href="#five" onclick="goalDoesntCountAdd();" class="w3-btn w3-flat-red"> Yes - Illegal Interference </a>
-		<a href="#five" onclick="goalCountsAdd();" class="w3-btn w3-flat-green"> No - Fair Play </a>
+		<img src="https://via.placeholder.com/300x200?text=Goalkeeper+Interference" alt="Goalkeeper" style="width:100%; max-width:300px; margin: 15px 0;">
+		<a href="#five" onclick="goalDoesntCountAdd();" class="w3-btn w3-flat-red question-nav"> Yes - Illegal Interference </a>
+		<a href="#five" onclick="goalCountsAdd();" class="w3-btn w3-flat-green question-nav"> No - Fair Play </a>
 	</div>
 </div>
 
@@ -158,9 +162,9 @@ Known Issues:
 
 	<div id="content" class="w3-container">
 		<p><strong>Did the ball cross the entire goal line?</strong></p>
-		<img src="https://images.unsplash.com/photo-1508572695657-f0e08f40d32a?w=400" alt="Goal line" style="width:100%; max-width:300px; margin: 15px 0;">
-		<a href="#results" onclick="goalDoesntCountAdd();" class="w3-btn w3-flat-red"> No - Didn't Cross Completely </a>
-		<a href="#results" onclick="goalCountsAdd();" class="w3-btn w3-flat-green"> Yes - Fully Crossed </a>
+		<img src="https://via.placeholder.com/300x200?text=Goal+Line+Cross" alt="Goal line" style="width:100%; max-width:300px; margin: 15px 0;">
+		<a href="#results" onclick="goalDoesntCountAdd();" class="w3-btn w3-flat-red question-nav"> No - Didn't Cross Completely </a>
+		<a href="#results" onclick="goalCountsAdd();" class="w3-btn w3-flat-green question-nav"> Yes - Fully Crossed </a>
 	</div>
 </div>
 
