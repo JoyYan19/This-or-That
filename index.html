@@ -24,7 +24,7 @@ Known Issues:
 - This is a simplified model; actual goal-scoring rules are more complex
 
 -->
-	
+//main page of website 	
    <head> 
       <title>Soccer Goal Decision</title>  
       <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -33,7 +33,7 @@ Known Issues:
       <link rel="stylesheet" href="w3-colors-flat.css">
    </head> 
 
-
+//code that handles logic of couting percentage of yes/no answers to determine if goal counts or not 
 <script>
         var goalsCount = 0; // variable to keep track of answers that indicate the goal should COUNT
         var goalDoesntCount = 0; // variable to keep track of answers that indicate the goal should NOT COUNT
@@ -58,7 +58,7 @@ Known Issues:
   </script>
 
 
-
+// the following code handles the styling of the website and the layout of the different pages
 <style>	
 .body {
      margin: 0em;
@@ -88,7 +88,7 @@ body {
     color: blue !important;
 }
 </style>
-
+// the following code handles the content of the website and the different pages that users see as they click through the questions
 <body>
 <div id="header" class="w3-container w3-flat-greenland">
 	<h1>⚽ Does the Goal Count? ⚽</h1> 
@@ -102,7 +102,7 @@ body {
 	<p><strong>Disclaimer:</strong> This tool is for entertainment purposes only. It simulates soccer goal decision-making and should not be used for official match decisions. Always follow official FIFA Laws of the Game.</p>
 </div>
 	
-<!-- this section displays Page for Question 1 and gives user the yes/no options-->
+// this section displays page for Question 1 and gives user the yes/no options
 <div class="page" id="one">
 	<div id="header" class="w3-container w3-flat-greenland"> <!--creating the header for Q1-->
 		<h1>Question 1</h1>
@@ -116,7 +116,7 @@ body {
 	</div>
 </div>
 	
-<!-- this section displays page for Question 2 and gives user the yes/no options-->
+// this section displays page for Question 1 and gives user the yes/no options
 <div class="page" id="two">
 	<div id="header" class="w3-container w3-flat-greenland"> <!--creating the header for Q2-->
 		<h1>Question 2</h1>
@@ -130,12 +130,12 @@ body {
 	</div>
 </div>	
 	
-<!-- this section displays page for Question 3 and gives user the yes/no options-->
+// this section displays page for Question 3 and gives user the yes/no options
 <div class="page" id="three">
 	<div id="header" class="w3-container w3-flat-greenland"> <!--creating the header for Q3-->
 		<h1>Question 3</h1>
 	</div>
-
+// the content of question 3, which asks about fouls and has the yes/no buttons for the user to click on
 	<div id="content" class="w3-container"> <!--creating the question and buttons for Q3-->
 		<p><strong>Was there a foul committed by the attacking player before the shot?</strong></p>
 		<img src="https://via.placeholder.com/300x200?text=Foul+Situation" alt="Soccer foul" style="width:100%; max-width:300px; margin: 15px 0;">
@@ -144,7 +144,7 @@ body {
 	</div>
 </div>
 	
-<!-- this section displays Page for Question 4 and gives user the yes/no options-->
+// this section displays page for Question 4 and gives user the yes/no options
 <div class="page" id="four">
 	<div id="header" class="w3-container w3-flat-greenland"> <!-- creating the header for Q4-->
 		<h1>Question 4</h1>
@@ -158,7 +158,7 @@ body {
 	</div>
 </div>
 
-<!-- this section displays Page for Question 5 and gives user the yes/no options-->
+// this section displays page for Question 4 and gives user the yes/no options
 <div class="page" id="five">
 	<div id="header" class="w3-container w3-flat-greenland"> <!-- creating the header for Q5-->
 		<h1>Question 5</h1>
@@ -172,7 +172,7 @@ body {
 	</div>
 </div>
 
-<!-- this section displays Page for Results and gives user the computer results option-->
+// this section displays the results page, which shows the percentage of yes/no answers and gives the final verdict on whether the goal counts or not
 <div class="page" id="results">
 	<div id="header" class="w3-container w3-flat-greenland"> <!-- header for the results page-->
 		<h1>The Verdict</h1>
@@ -186,7 +186,7 @@ body {
 	</div>
 </div>	
 	
-
+// this is the footer that appears at the bottom of the page
 <footer class="w3-bottom w3-container w3-flat-greenland">
 	<p>⚽ Soccer Goal Decision Tool ⚽</p>
 </footer>
